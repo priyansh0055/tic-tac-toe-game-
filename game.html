@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TOE GAME</title>
+    <style>
+      body {
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      .col {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        align-items: center;
+        cursor: pointer;
+
+      }
+      .row {
+        display: flex;
+      }
+      .status{
+        font-size: large;
+    
+} 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <div onclick="clickone(this)" id="0" class="col"></div>
+          <div onclick="clickone(this)" id="1"class="col"></div>
+          <div onclick="clickone(this)" id="2"class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="clickone(this)" id="3"class="col"></div>
+          <div onclick="clickone(this)" id="4"class="col"></div>
+          <div onclick="clickone(this)" id="5"class="col"></div>
+        </div>
+        <div class="row">
+          <div onclick="clickone(this)" id="6"class="col"></div>
+          <div onclick="clickone(this)" id="7"class="col"></div>
+          <div onclick="clickone(this)" id="8"class="col"></div>
+        </div>
+      </div>
+    </div>
+
+      <p id="status"></p>
+
+    <script src="game.js" defer></script>
+    <script src="game.css"></script>
+  </body>
+</html>
