@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container fade-in">
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <div class="score-board glass-panel">
+                <div class="player-score player-x active">
+                    <span class="player-label">Player X</span>
+                    <span class="score" id="score-x">0</span>
+                </div>
+                <div class="player-score player-o">
+                    <span class="score" id="score-o">0</span>
+                    <span class="player-label">Player O</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="turn-indicator" id="turn-indicator">
+                <span id="turn-text">Player X's Turn</span>
+            </div>
+
+            <div class="game-board glass-panel" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <div class="game-controls">
+                <button id="reset-btn" class="gradient-btn">Restart Game</button>
+            </div>
+        </main>
+
+        <div class="winner-modal overlay hidden" id="winner-modal">
+            <div class="modal-content glass-panel">
+                <h2 id="winner-message">Player X Wins!</h2>
+                <button id="modal-reset-btn" class="gradient-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
